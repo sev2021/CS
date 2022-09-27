@@ -1,5 +1,10 @@
 // Week01 Day02 pyramid exercise
 // using string.PadLeft(<number>, <char>) option
+// Python version XD:
+//
+// for i in range(29): print(" " * (30-i) , "X" * (i+i-1))
+// 
+
 
 using System;
 
