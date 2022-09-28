@@ -14,15 +14,20 @@ namespace StringArrays1
         static void Main(string[] args)
         {
 
-            // BEWARE IT IS COMPLETELY DIFFERENT THAN JAVA
-            // SUB-ARRAY SIZE F-I-X-E-D !!
-            
-            int[,] darray = new int[2,5] { { 2, 4, 8, 16, 32 }, { 55, 66, 77, 88 ,99} };
+            int[,] darray = new int[2, 5] { { 2, 4, 8, 16, 32 }, { 55, 66, 77, 88, 99 } };
+            Console.WriteLine(darray[1, 2]);
+            Console.WriteLine(darray.Rank);
+
+            int[] aa = { 22, 55, 22, 66, 11 };
+
+            Array.Sort(aa);
+            foreach (int i in aa) Console.WriteLine(i);
 
 
-            Console.WriteLine(darray[1,2]);
-
+            Console.WriteLine("------------------");
+            Console.WriteLine(Array.Find(aa, e => e > 33));
 
         }
     }
 }
+
