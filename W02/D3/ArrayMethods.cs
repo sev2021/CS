@@ -31,6 +31,20 @@
             foreach (string day in weekDays) Console.WriteLine(day);
 
             Console.WriteLine("_______________");
+            
+            //////////////////////////// FOREACH
+            Array.ForEach(weekDays, x => Console.WriteLine(x));
+
+            Console.WriteLine("_______________");
+
+            //////////////////////////// COPY
+            
+            string[] weekD = new string[4];
+
+            Array.Copy(weekDays, weekD, 3);
+            foreach (string day in weekD) Console.WriteLine(day);
+
+            Console.WriteLine("_______________");
 
             
         }
