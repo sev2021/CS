@@ -1,4 +1,9 @@
 // 29/09/2022
+// TASK
+//
+// Given two [3] arrays loop throug tham and fins unique values
+// Place these values into third array "aRes" and output content
+//
 
 using System;
 using System.Collections.Generic;
@@ -56,6 +61,8 @@ namespace StringArrays1
 
             ///////////////////////////// printing result array
             foreach (int i in aRes) Console.WriteLine(i);
+            
+            Console.ReadLine();
         }
     }
 }
